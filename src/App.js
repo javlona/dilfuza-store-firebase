@@ -1,18 +1,14 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Shop from "./Pages/Shop";
+import Header from "./Components/Header";
+
 
 function App() {
+  const role = "admin";
+
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/shop" element={<Shop />} />
-      </Routes>
+      <Header />
     </div>
-  );
+  )
 }
 
 export default App;
