@@ -61,6 +61,7 @@ const Header = () => {
             Dilfuza Store
           </Typography>
 
+          {/* {MOBILE SCREEN START} */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -109,14 +110,14 @@ const Header = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
+              fontFamily: "Lobster",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".03rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            LOGO
+            Dilfuza Store
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
