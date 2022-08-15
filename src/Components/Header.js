@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import StorefrontIcon from "@mui/icons-material/Storefront";
+import { signInWithGoogle } from "../Firebase";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -135,7 +136,12 @@ const Header = () => {
               </Button>
             ))}
           </Box>
-
+          {/* {MOBILE SCREEN END} */}
+          <Box >
+                <Button onClick={signInWithGoogle}>
+                  Sign In
+                </Button>
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
